@@ -29,11 +29,11 @@ export class OptionComponent {
             if (authorized) {
                 this.router.navigate(['/page/', this.option.page]);
             } else {
-                const bar = this.snackbar.open('You need ' + next.requirements.join(', ') + ' to enter this room!');
+                const bar = this.snackbar.open('You need ' + next.requirements.join(', ') + ' to do this action!');
 
                 setTimeout(() => {
                     bar.dismiss();
-                }, 2000);
+                }, 3000);
             }
         });
     }

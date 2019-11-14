@@ -1,83 +1,141 @@
 {
-  "inventory": ["chair"],
+  "inventory": [],
   "pages": [
     {
       "id": 0,
-      "title": "Hello",
-      "text": "welcome!!!!",
+      "title": "Entrée IUT",
+      "text": "Vous entrez dans l'IUT. Vous venez de marcher depuis quelques kilomètres et vous êtres fatigués. Il vous faut donc trouver une chaise pour vous reposer.",
       "requirements": [],
-      "items": ["table"],
       "options": [
         {
-          "text": "Next page",
+          "text": "1er étage",
+          "page": 3
+        },
+        {
+          "text": "Salle 007",
           "page": 1
         },
         {
-          "text": "Other page",
+          "text": "Sous-sol",
           "page": 2
         },
         {
-          "text": "Directly to the end",
-          "page": 5
+          "text": "Sortir",
+          "page": 8
         }
       ]
     },
     {
       "id": 1,
-      "title": "ok",
-      "text": "dnazjfk zefzef z,;ef zefzef",
+      "title": "Salle 007",
+      "text": "Vous entrez dans une salle de classe avec du matériel.",
       "requirements": [],
-      "items": ["better chair"],
+      "items": ["Chaise", "Table", "Chaise cassée"],
       "options": [
         {
-          "text": "After",
-          "page": 3
-        },
-        {
-          "text": "To first page",
+          "text": "Revenir à l'entrée",
           "page": 0
         }
       ]
     },
     {
       "id": 2,
-      "title": "other",
-      "text": "yes this is the other page",
+      "title": "Sous-sol",
+      "text": "Aucune lumière ne pénètre dans cette salle, mieux vaut revenir en arrière",
       "requirements": [],
       "options": [
         {
-          "text": "After",
-          "page": 3
-        },
-        {
-          "text": "Next",
-          "page": 4
+          "text": "Revenir à l'entrée",
+          "page": 0
         }
       ]
     },
     {
       "id": 3,
-      "title": "after ok",
-      "text": "Only one option!!!!",
+      "title": "1er étage",
+      "text": "Toutes les salles ici semblent être fermées...",
       "requirements": [],
+      "items": ["Chaise confortable"],
       "options": [
         {
-          "text": "end",
-          "page": 5
+          "text": "2ème étage",
+          "page": 4
+        },
+        {
+          "text": "Revenir à l'entrée",
+          "page": 0
         }
       ]
     },
     {
       "id": 4,
-      "title": "lost!!!!",
-      "text": "no!!!:::",
-      "requirements": []
+      "title": "2ème étage",
+      "text": "Toutes les salles ici semblent être fermées...",
+      "requirements": [],
+      "options": [
+        {
+          "text": "3ème étage",
+          "page": 5
+        },
+        {
+          "text": "1er étage",
+          "page": 3
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "The end",
-      "text": "dp,d azkd,;fgbnflkorpkế)gn fb",
-      "requirements": ["better chair"]
+      "title": "3ème étage",
+      "text": "Vous apercevez la salle screen et la salle 316, vous apercevez au loin une silhouette derrière la porte",
+      "requirements": [],
+      "options": [
+        {
+          "text": "Aller en salle 316",
+          "page": 6
+        },
+        {
+          "text": "Salle SCREEN",
+          "page": 7
+        },
+        {
+          "text": "2ème étage",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Salle 316",
+      "text": "La silhouette se révèle être Matteo. Ce dernier vous demande de l'aide, vous n'êtes malheuresement pas en capacité de l'aider, vous vous effondrez de fatigue, vous avez perdu!:::;;;",
+      "requirements": []
+    },
+    {
+      "id": 7,
+      "title": "Salle SCREEN",
+      "text": "Une salle sombre!!!!! L'endroit parfait pour dormir!!!",
+      "requirements": [],
+      "options": [
+        {
+          "text": "Se reposer",
+          "page": 9
+        },
+        {
+          "text": "Revenir dans le couloir",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Mort de fatigue::::",
+      "text": "oh non vous ne vous êtes pas reposé, vous êtes mort de fatigue!:!::!!",
+      "requirements": []
+    },
+    {
+      "id": 9,
+      "title": "!!!",
+      "text": "Bravo, vous n'êtes plus fatigués, vous avez gagné!",
+      "requirements": ["Chaise confortable"]
     }
   ]
 }

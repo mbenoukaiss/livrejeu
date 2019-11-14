@@ -6,7 +6,7 @@
 
             <mat-divider></mat-divider>
             <mat-card-actions>
-                <app-item *ngFor="let item of page.items" [item]="item" (took)="page.items.splice(page.items.indexOf($event))"></app-item>
+                <app-item *ngFor="let item of page.items" [item]="item" (took)="page.items.splice(page.items.indexOf($event), 1)"></app-item>
             </mat-card-actions>
         </mat-card>
     </mat-grid-tile>
