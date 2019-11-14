@@ -1,0 +1,83 @@
+{
+  "inventory": ["chair"],
+  "pages": [
+    {
+      "id": 0,
+      "title": "Hello",
+      "text": "welcome!!!!",
+      "requirements": [],
+      "items": ["table"],
+      "options": [
+        {
+          "text": "Next page",
+          "page": 1
+        },
+        {
+          "text": "Other page",
+          "page": 2
+        },
+        {
+          "text": "Directly to the end",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "ok",
+      "text": "dnazjfk zefzef z,;ef zefzef",
+      "requirements": [],
+      "items": ["better chair"],
+      "options": [
+        {
+          "text": "After",
+          "page": 3
+        },
+        {
+          "text": "To first page",
+          "page": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "other",
+      "text": "yes this is the other page",
+      "requirements": [],
+      "options": [
+        {
+          "text": "After",
+          "page": 3
+        },
+        {
+          "text": "Next",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "after ok",
+      "text": "Only one option!!!!",
+      "requirements": [],
+      "options": [
+        {
+          "text": "end",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "lost!!!!",
+      "text": "no!!!:::",
+      "requirements": []
+    },
+    {
+      "id": 5,
+      "title": "The end",
+      "text": "dp,d azkd,;fgbnflkorpkế)gn fb",
+      "requirements": ["better chair"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>
+        <mat-card class="page">
+            <h1>Inventory</h1>
+            <app-inventory></app-inventory>
+
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+                <app-item *ngFor="let item of page.items" [item]="item" (took)="page.items.splice(page.items.indexOf($event))"></app-item>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2">
+        <mat-card class="page" *ngIf="page">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.text }}</p>
+
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+                <app-option *ngFor="let option of page.options" [option]="option"></app-option>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+
